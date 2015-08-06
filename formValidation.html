@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form validation</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" media="screen" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .mrg {
+            padding-left: 0;
+        }
+        
+        .frm_validate {
+            margin-top: 100px;
+        }
+        
+        .pos {
+            margin-left: 300px;
+        }
+        
+        .pos > li {
+            margin-left: 40px;
+        }
+        
+        .nav-bg {
+            background: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row mrg">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <nav class="navbar navbar-inverse nav-bg">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                            <ul class="nav navbar-nav pos">
+                                <li class=""><a href="#">Calcultor1 <span class="sr-only">(current)</span></a></li>
+                                <li><a href="#">Calculator2</a></li>
+                                <li><a href="#">Calculator3</a></li>
+                                <li><a href="#">Form Validation</a></li>
+                                <li><a href="#">Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-horizontal frm_validate">
+                    <fieldset>
+                        <legend>Form Validation</legend>
+                        <div class="form-group">
+                            <label for="inputName" class="col-lg-2 control-label">Username</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputName" placeholder="Name" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputPassword" placeholder="....." type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirmPassword" class="col-lg-2 control-label">Confirm Password</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="confirmPassword" placeholder="....." type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="firstName" class="col-lg-2 control-label">First Name</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="firstName" placeholder="First Name" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName" class="col-lg-2 control-label">Last Name</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="lastName" placeholder="Last Name" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="form-group">
+                            <div class="col-lg-10 col-lg-offset-2">
+                                <button type="reset" class="btn btn-default">Cancel</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
